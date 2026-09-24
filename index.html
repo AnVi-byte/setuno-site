@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Setuno — understand any webpage without leaving it</title>
+    <meta name="description" content="Setuno is a Chrome extension that defines words, explains passages and summarizes web pages while you read." />
+    <!--
+      Setuno's public web page, published with GitHub Pages from a separate
+      public repository (the code repository is private). Plain HTML and CSS,
+      nothing to build: edit this file, upload it again, done.
+
+      It exists first for Stripe, which checks that a business has a public
+      page naming what it sells. Session 9 grows it into the real landing page
+      and adds the privacy policy next to it.
+    -->
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #ffffff;
+        --fg: #16181d;
+        --muted: #5f6673;
+        --border: #e4e6ec;
+        --raised: #f6f7f9;
+        --accent: #2f5fe0;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #1b1d23;
+          --fg: #f2f3f5;
+          --muted: #a2a8b4;
+          --border: #2e313a;
+          --raised: #23262e;
+          --accent: #7b9cf6;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 56px 20px 40px;
+      }
+
+      .brand {
+        margin: 0 0 24px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(30px, 6vw, 42px);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+      }
+
+      h2 {
+        margin: 48px 0 12px;
+        font-size: 22px;
+      }
+
+      h3 {
+        margin: 0 0 4px;
+        font-size: 17px;
+      }
+
+      p {
+        margin: 0 0 12px;
+      }
+
+      .lede {
+        font-size: 19px;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .status {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 4px 12px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .cards {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      .card {
+        padding: 16px 18px;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        background: var(--raised);
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      footer {
+        margin-top: 56px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="brand">Setuno</p>
+        <h1>Understand any webpage without leaving it.</h1>
+        <p class="lede">
+          Setuno is a Chrome extension for people who read long articles, documentation, papers and
+          tutorials. Highlight something you don't follow and Setuno explains it right there on the
+          page, with no copying, pasting or switching tabs.
+        </p>
+        <p class="status">Coming soon to the Chrome Web Store</p>
+      </header>
+
+      <section>
+        <h2>What it does</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Define a word</h3>
+            <p>Its meaning in the sentence you found it in, said plainly, with an example.</p>
+          </div>
+          <div class="card">
+            <h3>Explain a passage</h3>
+            <p>What a highlighted passage actually means. Then simpler, or with an example.</p>
+          </div>
+          <div class="card">
+            <h3>Summarize the page</h3>
+            <p>The article's main points in a few sentences, and the reading time that saved.</p>
+          </div>
+        </div>
+        <p class="muted" style="margin-top: 16px">
+          Setuno uses AI to write its answers. Nothing happens until you ask: it never runs on a
+          page by itself.
+        </p>
+      </section>
+
+      <section>
+        <h2>Pricing</h2>
+        <p>
+          <strong>Free:</strong> 20 definitions, 20 explanations and 3 page summaries a day. No
+          sign-up needed.
+        </p>
+        <p>
+          <strong>Setuno Pro:</strong> a monthly subscription with much higher daily limits and
+          longer pages. The price will be announced at launch. Cancel any time.
+        </p>
+      </section>
+
+      <section>
+        <h2>Payments</h2>
+        <p>
+          Setuno Pro is sold through Link, Stripe's merchant of record service. Link processes the
+          payment, handles sales tax and VAT, sends your receipts, and lets you manage or cancel your
+          subscription at <a href="https://link.com">link.com</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          Questions, problems or refund requests:
+          <a href="mailto:andvirtopeanu@gmail.com">andvirtopeanu@gmail.com</a>
+        </p>
+      </section>
+
+      <footer>
+        <p>Setuno is made by Andrei Vîrtopeanu, Romania.</p>
+        <p>A privacy policy will be published here before launch.</p>
+      </footer>
+    </main>
+  </body>
+</html>
