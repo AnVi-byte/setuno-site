@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thank you — Setuno Pro</title>
+    <meta name="robots" content="noindex" />
+    <!--
+      Where Stripe sends a reader after they pay for Setuno Pro (the success
+      page named in backend/supabase/functions/billing/index.ts). Published
+      with GitHub Pages from AnVi-byte/setuno-site, next to index.html: edit
+      here, upload there.
+
+      It only says thank you. Arriving here proves nothing and changes nothing:
+      the account is made Pro by Stripe telling Setuno's server, which happens
+      whether or not this page ever loads. So it promises no more than that.
+    -->
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #ffffff;
+        --fg: #16181d;
+        --muted: #5f6673;
+        --border: #e4e6ec;
+        --accent: #2f5fe0;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #1b1d23;
+          --fg: #f2f3f5;
+          --muted: #a2a8b4;
+          --border: #2e313a;
+          --accent: #7b9cf6;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+
+      main {
+        max-width: 620px;
+        margin: 0 auto;
+        padding: 56px 20px 40px;
+      }
+
+      .brand {
+        margin: 0 0 24px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(28px, 6vw, 38px);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+      }
+
+      p {
+        margin: 0 0 12px;
+      }
+
+      .lede {
+        font-size: 19px;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      footer {
+        margin-top: 48px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="brand">Setuno</p>
+      <h1>Thank you for getting Setuno Pro.</h1>
+      <p class="lede">
+        Setuno switches your account to Pro within a few seconds. You can close this tab and go
+        back to what you were reading.
+      </p>
+      <p>
+        Your receipt comes by email from Link, Stripe's merchant of record service, which handles
+        the payment and the VAT. You can manage or cancel your subscription any time at
+        <a href="https://link.com">link.com</a>, signing in with the email you paid with.
+      </p>
+      <p>
+        Pro belongs to your Setuno account. To use it on another computer, or after reinstalling,
+        sign in with your email in Setuno's Settings.
+      </p>
+
+      <footer>
+        <p>
+          Something not right? Write to
+          <a href="mailto:andvirtopeanu@gmail.com">andvirtopeanu@gmail.com</a>.
+        </p>
+        <p><a href="./">Back to the Setuno page</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
