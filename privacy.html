@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy policy — Setuno</title>
+    <meta name="description" content="What Setuno sends, where it goes, what is kept and for how long." />
+    <!--
+      Setuno's privacy policy. Published with GitHub Pages from
+      AnVi-byte/setuno-site, next to index.html: edit here, upload there.
+
+      Every statement here is a fact about the code or the services behind it,
+      checked when this page was written (CLAUDE.md, Session 9). When one of
+      them changes — a new provider, a new table, a different retention — this
+      page changes in the same commit, and the date below moves.
+    -->
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #ffffff;
+        --fg: #16181d;
+        --muted: #5f6673;
+        --border: #e4e6ec;
+        --raised: #f6f7f9;
+        --accent: #2f5fe0;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #1b1d23;
+          --fg: #f2f3f5;
+          --muted: #a2a8b4;
+          --border: #2e313a;
+          --raised: #23262e;
+          --accent: #7b9cf6;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 56px 20px 40px;
+      }
+
+      .brand {
+        margin: 0 0 24px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+
+      .brand a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(30px, 6vw, 40px);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+      }
+
+      h2 {
+        margin: 44px 0 12px;
+        font-size: 22px;
+      }
+
+      p,
+      ul {
+        margin: 0 0 12px;
+      }
+
+      li {
+        margin-bottom: 6px;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .short {
+        margin-top: 28px;
+        padding: 18px 20px 8px;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        background: var(--raised);
+      }
+
+      .short h2 {
+        margin-top: 0;
+        font-size: 18px;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        margin: 0 0 12px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+      }
+
+      th,
+      td {
+        padding: 9px 10px;
+        border-bottom: 1px solid var(--border);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      /* On a phone, three columns leave each one a word wide. Each row becomes
+         a block instead, and each cell says which column it was. */
+      @media (max-width: 560px) {
+        table,
+        tbody,
+        tr,
+        td {
+          display: block;
+        }
+
+        thead {
+          display: none;
+        }
+
+        tr {
+          padding: 10px 0;
+          border-bottom: 1px solid var(--border);
+        }
+
+        td {
+          padding: 3px 0;
+          border: 0;
+        }
+
+        td::before {
+          content: attr(data-label);
+          display: block;
+          color: var(--muted);
+          font-size: 13px;
+          font-weight: 600;
+        }
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      footer {
+        margin-top: 56px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="brand"><a href="./">Setuno</a></p>
+      <h1>Privacy policy</h1>
+      <p class="muted">Last updated 2 October 2026</p>
+
+      <section class="short">
+        <h2>The short version</h2>
+        <ul>
+          <li>
+            Setuno sends text from a page only when you ask it to: when you click Define, Explain,
+            Simpler, Example or Summarize. Never by itself, and never when you just hover over or
+            select something.
+          </li>
+          <li>That text goes to OpenAI, which writes the answer. OpenAI does not train its models on it.</li>
+          <li>
+            Setuno keeps finished answers, not your text, for 30 days, so the same question asked again
+            costs nothing.
+          </li>
+          <li>You don't need an account or an email to use Setuno. An email is optional.</li>
+          <li>No ads, no analytics, no trackers, and nothing is sold.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Who is responsible</h2>
+        <p>
+          Setuno is made by Andrei Vîrtopeanu, an individual in Romania, who is responsible for the
+          personal data described here. For any question about it, or to use any of your rights below,
+          write to <a href="mailto:setuno.help@gmail.com">setuno.help@gmail.com</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>What Setuno sends, and when</h2>
+        <p>
+          Setuno runs on the pages you visit so it can notice when you select text and show its
+          buttons. Noticing happens inside your browser. Nothing leaves your computer until you click
+          one of Setuno's buttons, and then only what that request needs:
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>When you click</th><th>Setuno sends</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="When you click">Define</td>
+                <td data-label="Setuno sends">The word, and the sentence it appears in.</td>
+              </tr>
+              <tr>
+                <td data-label="When you click">Explain</td>
+                <td data-label="Setuno sends">The text you selected, and the page's title.</td>
+              </tr>
+              <tr>
+                <td data-label="When you click">Simpler or Example</td>
+                <td data-label="Setuno sends">The text you selected, and the explanation you were just shown.</td>
+              </tr>
+              <tr>
+                <td data-label="When you click">Summarize</td>
+                <td data-label="Setuno sends">
+                  The main text of the page, as Setuno reads it with menus, ads and comments left out,
+                  and the page's title.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          With Define, Explain, Simpler and Example, Setuno also sends the language the page says it is
+          written in, so the answer comes back in the language you are reading. If the page doesn't say,
+          it sends your browser's language instead.
+        </p>
+        <p>
+          Setuno never sends the page's address, your browsing history, or anything from a page where
+          you didn't click one of its buttons.
+        </p>
+      </section>
+
+      <section>
+        <h2>Where it goes</h2>
+        <ul>
+          <li>
+            <strong>Setuno's server</strong>, run on Supabase in Frankfurt, Germany. It checks your
+            account and today's limit, then passes the request on.
+          </li>
+          <li>
+            <strong>OpenAI</strong>, in the United States, writes the answer. Setuno asks OpenAI not to
+            store the request. OpenAI does not use what it receives through its API to train its
+            models, and keeps it for up to 30 days in logs it uses to detect abuse, unless the law
+            requires longer. See
+            <a href="https://openai.com/policies/privacy-policy/">OpenAI's privacy policy</a>.
+          </li>
+        </ul>
+        <p>No other company receives the text you ask about.</p>
+      </section>
+
+      <section>
+        <h2>What Setuno keeps on its server</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>What</th><th>Why</th><th>How long</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="What">
+                  Finished answers, each stored under a fingerprint of its question. The fingerprint is a
+                  one-way code; the text you asked about is never stored, and the answer is not linked to
+                  your account.
+                </td>
+                <td data-label="Why">So the same question, from anyone, is answered instantly and at no cost.</td>
+                <td data-label="How long">30 days from when the answer was first written.</td>
+              </tr>
+              <tr>
+                <td data-label="What">
+                  Your account: a random identifier, made the first time you ask for something. And your
+                  email address, only if you add one.
+                </td>
+                <td data-label="Why">Daily limits belong to an account. An email lets you sign back in on another computer or after reinstalling.</td>
+                <td data-label="How long">As long as the account exists.</td>
+              </tr>
+              <tr>
+                <td data-label="What">
+                  For each browser signed in to your account: the IP address and the browser's name and
+                  version it signed in from.
+                </td>
+                <td data-label="Why">Kept by the sign-in service to protect the account.</td>
+                <td data-label="How long">Until that browser signs out, or the account is deleted.</td>
+              </tr>
+              <tr>
+                <td data-label="What">How many definitions, explanations and summaries the account asked for each day. Only the numbers.</td>
+                <td data-label="Why">To apply the daily limits.</td>
+                <td data-label="How long">30 days.</td>
+              </tr>
+              <tr>
+                <td data-label="What">
+                  Technical logs: which feature was used, how many characters were sent, how long the
+                  answer took, and the first characters of the account's identifier. Not the text. As on
+                  any web server, the hosting service's own logs also record the IP address each request
+                  came from.
+                </td>
+                <td data-label="Why">To find and fix faults.</td>
+                <td data-label="How long">1 day.</td>
+              </tr>
+              <tr>
+                <td data-label="What">If you buy Setuno Pro: Stripe's identifiers for your subscription and for you as its customer, the subscription's status, and when it renews or ends.</td>
+                <td data-label="Why">To know which accounts have Pro.</td>
+                <td data-label="How long">As long as the account exists.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>Email</h2>
+        <p>
+          If you add an email address, Setuno uses it only to send you sign-in codes, and to reply if you
+          write to Setuno. No newsletters and no marketing. The codes are sent from Setuno's Gmail
+          account, so Google's email service handles your address on the way.
+        </p>
+      </section>
+
+      <section>
+        <h2>Payments</h2>
+        <p>
+          Setuno Pro is sold through Link, Stripe's merchant of record service. When you buy it, you pay
+          on Stripe's own page: your card details go to Stripe and never reach Setuno. Setuno tells Stripe
+          your account's identifier and your email address, so the payment is tied to the right account
+          and your receipts go to the same address. Stripe handles the payment, the tax and your receipts
+          under its own terms: see <a href="https://stripe.com/privacy">Stripe's privacy policy</a> and
+          <a href="https://link.com/privacy">Link's privacy policy</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>What stays in your browser</h2>
+        <p>
+          Setuno keeps some things in your browser's storage for the extension, on your own computer:
+          your recent answers, with the page title and address each one came from (the History screen);
+          up to 200 saved answers, so asking the same thing twice is instant; today's counts; which plan
+          you're on; and the sign-in for your account. None of this is sent anywhere.
+        </p>
+        <p>
+          You can delete your history and saved answers in Setuno's Settings, with "Clear history and
+          saved answers". Removing the extension from Chrome deletes all of it.
+        </p>
+      </section>
+
+      <section>
+        <h2>Why Setuno may use this data</h2>
+        <ul>
+          <li>To give you the answers you ask for, and Pro once you've paid for it (a contract with you).</li>
+          <li>To apply daily limits and prevent abuse, which keeps Setuno affordable to run (legitimate interests).</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Your rights</h2>
+        <p>
+          You can ask to see the personal data Setuno holds about you, to correct it, to have it deleted,
+          to receive a copy of it, or to object to how it is used. Write to
+          <a href="mailto:setuno.help@gmail.com">setuno.help@gmail.com</a> from the address on your account. An account
+          without an email isn't tied to your name; write anyway, and Setuno will help you find it. If you
+          have Setuno Pro, deleting your account also means cancelling the subscription, and Setuno will
+          make sure that happens.
+        </p>
+        <p>
+          You can also complain to a data protection authority. In Romania that is the
+          <a href="https://www.dataprotection.ro/">Autoritatea Națională de Supraveghere a Prelucrării
+          Datelor cu Caracter Personal (ANSPDCP)</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>Setuno is not meant for children under 13, and does not knowingly collect their data.</p>
+      </section>
+
+      <section>
+        <h2>Chrome Web Store</h2>
+        <p>
+          Setuno's use of information received from Chrome follows the
+          <a href="https://developer.chrome.com/docs/webstore/program-policies/">Chrome Web Store User
+          Data Policy</a>, including its Limited Use requirements. The data is used only to provide
+          Setuno's features, is never sold, and is never used for advertising.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes</h2>
+        <p>If this policy changes, the new version is published on this page with a new date at the top.</p>
+      </section>
+
+      <footer>
+        <p>Setuno is made by Andrei Vîrtopeanu, Romania.</p>
+        <p><a href="./">Back to the Setuno page</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
